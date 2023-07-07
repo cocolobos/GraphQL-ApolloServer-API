@@ -1,0 +1,3 @@
+{
+    "plugins": ["@babel/plugin-proposal-import-attributes-to-assertions"]
+  }

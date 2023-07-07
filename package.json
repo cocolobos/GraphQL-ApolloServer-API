@@ -1,0 +1,29 @@
+{
+  "name": "graphql---apollo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cocolobos/GraphQL-ApolloServer-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cocolobos/GraphQL-ApolloServer-API/issues"
+  },
+  "homepage": "https://github.com/cocolobos/GraphQL-ApolloServer-API#readme",
+  "dependencies": {
+    "apollo-datasource": "^0.7.0",
+    "apollo-server": "2.12",
+    "nodemon": "^2.0.3"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-import-attributes-to-assertions": "^7.22.5"
+  }
+}

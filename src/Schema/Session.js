@@ -3,6 +3,7 @@ export const typeDefs = gql`
 
 type Query {
     sessions: [Session]
+    sessionById(id: ID): Session
 }
 
 type Session {

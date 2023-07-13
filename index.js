@@ -1,17 +1,7 @@
 import { typeDefs } from "./src/Schema/Session.js";
 import { ApolloServer } from "apollo-server";
 import dataSources from "./src/dataSource/index.js"
-
-const resolvers = {
-    Query: {
-        sessions: (parent, args, { dataSources }, info) => {
-            return dataSources?.sessionsAPI.getSessions()
-        },
-        sessionById: (parent, { id }, { dataSources }, info) => {
-            return dataSources?.sessionsAPI.getSessionById(id)
-        }
-    }
-}
+import {resolvers} from "./src/resolvers/index.js"
 
 const server = new ApolloServer({
     typeDefs,

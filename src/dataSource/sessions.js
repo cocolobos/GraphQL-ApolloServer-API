@@ -8,8 +8,8 @@ class SessionAPI extends DataSource {
     }
 
     initialize(config) {}
-    getSessions() {
-        return mockSessions;
+    getSessions(args) {
+        return _.filter(mockSessions, args);
     }
     getSessionById(id) {
         const filteredSession = _.filter(mockSessions, { id: parseInt(id)});
